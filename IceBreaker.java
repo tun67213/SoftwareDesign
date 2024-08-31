@@ -4,11 +4,21 @@
  */
 public class IceBreaker
 {
-    public int predictCases(int sum, int i)
+    final int numberOfAcceptableDaysForRefund = 14;
+    final int studentPopulation = 39740;
+    int numberOfDaysSinceClassStarted;
+    int sum = 0;
+
+    public IceBreaker()
     {
-        if(i == 0)
+        numberOfDaysSinceClassStarted = 0;
+    }
+
+    public int predictCases(int numberOfDays)
+    {
+        for(int i = 0; i < numberOfDays; i++)
         {
-            
+            sum += (int) (Math.pow(2, i) / 1);
         }
     }
 }
